@@ -75,6 +75,8 @@ function ArchiveList() {
           ref={gridRef}
           columnDefs={columns}
           rowSelection="single"
+          pagination="true"
+          paginationPageSize="10"
           onGridReady={(params) => {
             gridRef.current = params.api;
           }}
