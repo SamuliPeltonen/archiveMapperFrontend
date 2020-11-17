@@ -13,7 +13,7 @@ function ArchiveList() {
   const gridRef = useRef();
 
   const getArchives = () => {
-    fetch("http://localhost:8080/archives")
+    fetch("https://ohp20kysely.herokuapp.com/archives")
       .then((response) => response.json())
       .then((data) => {
         setArchives(data);
@@ -57,7 +57,7 @@ function ArchiveList() {
       headerName: "EDIT",
       field: "archiveId",
       cellRendererFramework: (params) => (
-        <a href={`http://localhost:8080/update/${params.value}`}>Edit</a>
+        <a href={`https://archivemapper.herokuapp.com/update/${params.value}`}>Edit</a>
       ),
     },
   ];
