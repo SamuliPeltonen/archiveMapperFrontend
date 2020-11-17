@@ -57,7 +57,7 @@ function ArchiveList() {
       headerName: "EDIT",
       field: "archiveId",
       cellRendererFramework: (params) => (
-        <a href={`https://archivemapper.herokuapp.com/update/${params.value}`}>Edit</a>
+        <a href={`https://archivemap.herokuapp.com/update/${params.value}`}>Edit</a>
       ),
     },
   ];
@@ -81,7 +81,7 @@ function ArchiveList() {
           rowData={archives}
         ></AgGridReact>
       </div>
-      <Button variant="outlined" color="primary" href="http://localhost:8080/archives/add">Add new record</Button>
+      <Button variant="outlined" color="primary" href="https://archivemap.herokuapp.com/archives/add">Add new record</Button>
     </div>
   );
 }
