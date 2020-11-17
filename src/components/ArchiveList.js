@@ -13,7 +13,7 @@ function ArchiveList() {
   const gridRef = useRef();
 
   const getArchives = () => {
-    fetch("https://ohp20kysely.herokuapp.com/archives")
+    fetch("https://archivemap.herokuapp.com/archives")
       .then((response) => response.json())
       .then((data) => {
         setArchives(data);
